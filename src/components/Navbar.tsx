@@ -4,7 +4,7 @@ import icon from "../images/icon.png"
 
 const Navbar = () => {
   return (
-    <div className='bg-white border-b sticky top-0  pt-3'>
+    <div className='bg-white border-b z-10 sticky top-0  pt-3'>
       <div className='flex justify-between mx-9'>
         <div className='flex items-center w-full'>
 
