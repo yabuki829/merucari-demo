@@ -1,12 +1,11 @@
 import React from 'react'
 import { useNavigate,Route,Routes,Link} from "react-router-dom"
-import icon from "../icon.png"
+import icon from "../images/icon.png"
 
 const Navbar = () => {
-  const imageStyle = " "
   return (
-    <div className='bg-white border-b'>
-      <div className='flex justify-between mx-9 mt-3'>
+    <div className='bg-white border-b sticky top-0  pt-3'>
+      <div className='flex justify-between mx-9'>
         <div className='flex items-center w-full'>
 
           <img className="w-12 h-12 object-cover mr-2" src={icon} alt="" />
@@ -15,9 +14,9 @@ const Navbar = () => {
         </div>
         <div className='w-1/3'>
           <ul className='flex justify-end items-center'>
-            <li className='mx-3 text-sm'> <Link to={"/"}>お知らせ</Link></li>
-            <li className='mx-3 text-sm'>  <Link to={"/"}>ログイン</Link></li>
-            <li className='mx-3 text-sm'><Link to={"/"}>会員登録</Link></li>
+            <li className='mx-1 text-sm px-4 py-1 rounded-sm hover:bg-gray-200'> <Link to={"/"}>お知らせ</Link></li>
+            <li className='mx-1 text-sm px-3 py-1 rounded-sm hover:bg-gray-200'>  <Link to={"/"}>ログイン</Link></li>
+            <li className='mx-1 text-sm px-3 py-1 rounded-sm hover:bg-gray-200'><Link to={"/"}>会員登録</Link></li>
             <li className='ml-2 text-sm font-bold px-4 py-2 rounded-md text-white bg-red-500  hover:bg-red-400'><Link to={"/"}>出品</Link></li>
           </ul>
         </div>
